@@ -1,14 +1,34 @@
 <resources>
 
     <!-- TODO: Add own styles here! -->
+    
+    <style name="TextStyle">
+        <item name="android:textSize">22sp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:textColor" type="color">@color/uwPurple</item>
+    </style>
+
+    <style name="childYo" parent="@style/TextStyle">
+        <item name="android:textStyle">bold</item>
+    </style>
+
+    <style name="goldTime" parent="@style/childYo">
+        <item name="android:background">@color/uwGold</item>
+        <item name="android:textColor">#000</item>
+    </style>
+
+    <style name="btnShit" parent="@android:style/MediaButton">
+        <item name="android:textSize">18sp</item>
+    </style>
 
 
     <!-- Base application theme. -->
-    <style name="AppTheme" parent="Theme.AppCompat.Light.DarkActionBar">
+    <style name="AppTheme" parent="Theme.AppCompat.DayNight.DarkActionBar">
         <!-- Customize your theme here. -->
-        <item name="colorPrimary">@color/colorPrimary</item>
+        <item name="colorPrimary">@color/uwPurple</item>
         <item name="colorPrimaryDark">@color/colorPrimaryDark</item>
-        <item name="colorAccent">@color/colorAccent</item>
+        <item name="colorAccent">@color/uwGold</item>
     </style>
 
 </resources>
